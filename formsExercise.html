@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Customer Experience Survey</h1>
+    <form>
+        <Label for="Select Store Number">Store Number</Label>
+        <select id="Select Store Number">
+            <option hidden>Select Store Number</option>
+            <option>3109</option>
+            <option>2421</option>
+            <option>5357</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>When you visited:</legend>
+            <label for="Date Visited">Date Visited
+            <input type="date" name="" id="Date Visited"></label>
+
+
+            <label for="Time Visited">Time</label>
+            <input type="time" name="" id="Time Visited">
+
+            </select>
+        </fieldset>
+        <br>
+        <label for="First Name">First Name</label>
+        <input type="text" id="First Name" placeholder="John">
+
+        <label for="Last Name">Last Name</label>
+        <input type="text" id="Last Name" placeholder="Doe">
+        <br>
+        <label for="userEmail">Email</label>
+        <input type="email" name="" id="userEmail" placeholder="your email">
+        <br>
+        <label for="userMale">Male</label>
+        <input type="radio" id="userMale" name="radioLink">
+        <label for="userFemale">Female</label>
+        <input type="radio" name="radioLink" id="userFemale" checked>
+        <label for="userOther">Other</label>
+        <input type="radio" id="userOther" name="radioLink">
+
+        <br>
+        
+        <label for="">Tell us about your experience:
+        <div><textarea name="Tell us about your experience" id="" cols="20" rows="2"></textarea></div></label>
+        <label for="">Times visited in the last month:
+        <input type="number" min="1" max="30" ></label>
+<br>
+<span></span>
+<label for="">Please check the box if you would be willing to be contacted about your experience
+    <input type="checkbox" value="">
+</label>
+</span>
+<br>
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
