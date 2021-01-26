@@ -10,6 +10,7 @@
 <body>
     <h1>Customer Experience Survey</h1>
     <form>
+        <!-- Select -->
         <Label for="Select Store Number">Store Number</Label>
         <select id="Select Store Number">
             <option hidden>Select Store Number</option>
@@ -18,67 +19,58 @@
             <option>5357</option>
         </select>
         <br>
+        <!-- Fieldset -->
         <fieldset>
             <legend>When you visited:</legend>
-            <label for="Date Visited">Date Visited
-            <input type="date" name="" id="Date Visited"></label>
-
-
-            <label for="Time Visited">Time</label>
-            <input type="time" name="" id="Time Visited">
-
-            </select>
+            <!-- Date -->
+            <label for="Date">Date Visited
+                <input type="date" name="" id="Date" min="2021-01-01" max="2021-12-31"></label>
+            <label for="Time">Time</label>
+            <!-- Time -->
+            <input type="time" name="" id="Time">
         </fieldset>
-        <br>
+        <!-- Text Inputs -->
         <label for="First Name">First Name</label>
         <input type="text" id="First Name" placeholder="John">
-
         <label for="Last Name">Last Name</label>
         <input type="text" id="Last Name" placeholder="Doe">
         <br>
+        <!-- email -->
         <label for="userEmail">Email</label>
         <input type="email" name="" id="userEmail" placeholder="your email">
         <br>
-        <label for="userMale">Male</label>
-        <input type="radio" id="userMale" name="radioLink">
-        <label for="userFemale">Female</label>
-        <input type="radio" name="radioLink" id="userFemale" checked>
-        <label for="userOther">Other</label>
-        <input type="radio" id="userOther" name="radioLink">
-
+        <!-- Radio -->
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="gender">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" checked>
+        <label for="Other">Other</label>
+        <input type="radio" id="Other" name="gender">
         <br>
-        
+        <!-- Textarea -->
         <label for="">Tell us about your experience:
-        <div><textarea name="Tell us about your experience" id="" cols="20" rows="2"></textarea></div></label>
+            <div><textarea name="Tell us about your experience" id="" cols="20" rows="2"></textarea></div>
+        </label>
+        <!-- number input -->
         <label for="">Times visited in the last month:
-        <input type="number" min="1" max="30" ></label>
-<br>
-<span></span>
-<label for="">Please check the box if you would be willing to be contacted about your experience
-    <input type="checkbox" value="">
-</label>
-</span>
-<br>
-<input type="reset" value="Reset">
-<input type="submit" value="Submit">
-
-
-
-
+            <input type="number" min="1" max="30"></label>
+        <br>
+        <span></span>
+        <label for="">Please check the box if you would be willing to be contacted about your experience
+            <input type="checkbox" value="">
+        </label>
+        </span>
+        <br>
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" pattern=".{5,10}" required
+            title="Please enter a password that is 5 to 10 characters in length">
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <!-- Java password -->
+        <!-- <input type="password" id="password" pattern=".{5,10}" oninvalid="this.setCustomValidity('Please enter a password that is 5 to 10 characters in length')" onchange="this.setCustomValidity('')"> -->
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
